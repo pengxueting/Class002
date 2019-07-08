@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-   var result = 10.2
+    @IBOutlet weak var lbMsg: UILabel!
+    var result : float_t = 10.2
    
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        
+        print("哇哦哦哦")
+        
+        
+        lbMsg.text = "我要暴富"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +27,7 @@ class ViewController: UIViewController {
         
         let 如果我去超市 = true
         
-        let 如果看到橘子 = true               
+        let 如果看到橘子 = true
         
         if 如果我去超市{
           
